@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+/*== VARIABLES =======*/
+:root {
+--color-default: hsl(0, 74%, 26%);
+--title-font: 'Poppins', sans-serif;
+--title-font-size: 1rem;
+}
+/*== SECTION =======*/
+#header {
+  background-color: hsl(0, 74%, 26%);
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin-top: 1.2rem;
+}
+
+.title {
+  position: relative;
+  margin: 0 2rem;
+  font: 700 var(--title-font-size) var(--title-font);
+  color: white;
+  padding: 2rem;
+}
+
+/*== LOGO =======*/
+.logo {
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  text-align: center;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+
+}
+
+/*======= LAYOUT ======*/
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.grid{
+  display: grid;
+  gap: 2rem;
+}
+.section{
+  margin-top: 2rem;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: justify;
+  border: solid;
+  border-color: hsl(0, 74%, 26%);
+}
+
+h2{
+  font: 700 var(--title-font-size) var(--title-font);
+  color: var(--color-default);
+}
+p{
+  font: 250 1rem var(--title-font);
+}
+
+/*====== HOME ==========*/
+
+#about .image img {
+  position: relative;
+  left: 25%;
+  border-radius: 1rem;
+  text-align: center;
+  
+}
