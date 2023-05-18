@@ -13,6 +13,146 @@ a {
 --title-font: 'Poppins', sans-serif;
 --title-font-size: 1rem;
 }
+/* General Styles -------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    font-family: "Anuphan", sans-serif;
+}
+
+::selection{
+    background-color: var(--main-color-1);
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    color: #fff;
+}
+
+h1{
+  color: #fff;
+}
+
+/* Navbar Styling -------------------------------------- */
+
+header{
+  position: fixed;
+  height: 5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+header.scrolled{
+  background-color: hsla(0, 74%, 26%, 0.692);
+  box-shadow: 0 5px 20px 0.1px rgba(170, 111, 0, 0.281);
+  backdrop-filter: blur(15px);
+}
+
+nav.container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.links{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links ul{
+  margin-top: 1.3rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link{
+  position: relative;
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: .85rem;
+  letter-spacing: .5px;
+  color: var(--text-color);
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.nav-link::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--main-color-1);
+  bottom: 0;
+  left: -5px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s;
+}
+.nav-link:hover{
+  color: #fff;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+  opacity: 0.5;
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+}
+
+.homeImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.home h1{
+  text-align: center;
+  top: 15%;
+  position: absolute;
+  z-index: 1;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.home h1 span {
+  color: var(--main-color-1);
+}
+
+.iframeHome{
+  top: 35%;
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+}
+
+
 /*== SECTION =======*/
 #header {
   background-color: hsl(0, 74%, 26%);
